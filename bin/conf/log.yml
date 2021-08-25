@@ -1,0 +1,19 @@
+logs:
+    - name: root
+      level: info
+      appenders:
+          - type: FileLogAppender
+            file: /apps/logs/sblog/root.log
+          - type: StdoutLogAppender
+    - name: system
+      level: info
+      appenders:
+          - type: FileLogAppender
+            file: /apps/logs/sblog/system.log
+          - type: StdoutLogAppender
+    - name: access
+      level: info
+      appenders:
+          - type: FileLogAppender
+            file: /apps/logs/sblog/access.log
+          - type: StdoutLogAppender
